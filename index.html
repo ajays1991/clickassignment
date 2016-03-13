@@ -8,6 +8,18 @@
     <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' />
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
     <style>
+    html {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body {
+        margin: 0px;
+        min-height: 100%;
+        width: 100%;
+    }
+    
     .popover {
         border-top: 1px solid #000000;
         border-left: 10px solid #000000;
@@ -139,8 +151,6 @@
         margin-left: 200px;
     }
     
-    .searchBar {}
-    
     .row {
         border: 1px black solid;
     }
@@ -161,6 +171,7 @@
         display: flex;
         -webkit-flex-flow: row;
         flex-flow: row;
+        min-height: 75%;
     }
     
     #main > article {
@@ -192,10 +203,11 @@
         display: flex;
         min-height: 100px;
         background: #EEE;
+        min-height: 10%;
     }
     /* Too narrow to support three columns */
     
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 640) {
         #main,
         #page {
             -webkit-flex-flow: column;
@@ -212,14 +224,14 @@
         #main > aside,
         header,
         footer {
-            min-height: 50px;
-            max-height: 50px;
+            min-height: 70px;
+            max-height: 100px;
         }
     }
     </style>
 </head>
 
-<body ng-app='clicklab' ng-controller="clicklabController as clCtrl">
+<body ng-app='clicklab' ng-controller="clicklabController as clCtrl" ng-cloak>
     <header layout="row" style="display:flex;justify-content: space-between;">
         <div class="logo">
             <div flex="20"></div>
