@@ -41,7 +41,7 @@ angular.module('clicklab').controller('clicklabController', ['$scope', '_', '$do
         name: "Boss",
         seats: [
             { bool: false, employeeId: 13, pos: 1, occupied: true, name: 'Powerpack', designation: 'Boss', gravatar: undefined ,project: 'Sales'},
-            { bool: false, employeeId: 14, pos: 2, occupied: false, name: 'Powerpack', designation: 'Big Boss', gravatar: undefined,project: 'Sales' },
+            { bool: false, employeeId: 14, pos: 2, occupied: true, name: 'Powerpack', designation: 'Big Boss', gravatar: undefined,project: 'Sales' },
             { bool: false, employeeId: 15, pos: 3, occupied: false, name: undefined, designation: undefined, gravatar: undefined },
             { bool: false, employeeId: 16, pos: 4, occupied: false, name: undefined, designation: undefined, gravatar: undefined }
         ]
